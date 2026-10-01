@@ -1,0 +1,49 @@
+
+x = 0
+ 
+
+def A(a):
+    print("$", end=(""))
+    for n in range(a - 2, 0, -1):
+        print("-", end=(""));
+    print("$")
+
+    for n in range(a-2, 0, -2):
+        for n in range(n):
+            print("x", end="");
+        print("\n");
+
+    for n in range(0, a-2, 2):
+            for n in range(n):
+                print("x", end="");
+            print("\n");
+    
+    print("$", end=(""))
+    for n in range(a - 2, 0, -1):
+        print("-", end=(""));
+    print("$")
+
+def B(b):
+    print("nothing");
+
+def C(c):
+    print("nothing");
+
+
+print("Zadejte cele liche cislo vetsi nebo rovno 3 a mensi nez30, pro nejsirsi radek obrazce.")
+
+x = int(input())
+
+if x % 2 != 0 and 3 <= x < 20:
+    print("\n")
+    A(x);
+    print("\n")
+    print("\n")
+    B(x);
+    print("\n")
+    print("\n")
+    C(x);
+else:
+    print("Chybne zadane parametry.");
+
+    
