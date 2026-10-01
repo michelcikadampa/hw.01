@@ -9,11 +9,13 @@ def A(a):
     print("$")
 
     for n in range(a-2, 0, -2):
+        for n in range((x-n)/2):
+            print(" ", end="")
         for n in range(n):
             print("x", end="");
         print("\n");
 
-    for n in range(0, a-2, 2):
+    for n in range(0, a-2, 2):           
             for n in range(n):
                 print("x", end="");
             print("\n");
